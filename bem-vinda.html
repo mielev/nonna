@@ -144,9 +144,23 @@
       width: 66%;
       object-fit: contain;
       object-position: center;
-      padding: 0;
+      padding: 2rem 1rem;
       margin-top: 3%;
-      outline: 6px solid rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-image .img-wrap {
+      width: 66%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 6px solid rgba(255, 255, 255, 0.9);
+      margin-top: 3%;
+    }
+
+    .hero-image .img-wrap img {
+      width: 100%;
+      margin-top: 0;
+      padding: 2rem 1rem;
     }
 
     @media (max-width: 768px) {
@@ -302,7 +316,7 @@
 
   <!-- Header -->
   <header>
-    <a href="index.html" class="back-link">bem-vinda</a>
+    <a href="index.html" class="back-link">nonna</a>
     <!-- center logo: clips up into view on scroll, swaps on dark bg -->
     <div class="header-logo-wrap">
       <img src="assets/logos/Horizontal_Charcoal.svg" alt="Nonna" class="header-logo charcoal">
@@ -326,7 +340,9 @@
 
     <!-- Right: tote bag image -->
     <div class="hero-image">
-      <img src="assets/images/Tote-bag.png" alt="">
+      <div class="img-wrap">
+        <img src="assets/images/Tote-bag.png" alt="">
+      </div>
     </div>
 
   </section>
