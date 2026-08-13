@@ -51,11 +51,11 @@
     /* ── Logo — top center ── */
     .landing-logo {
       position: fixed;
-      top: 0%;
+      top: clamp(20px, 4vh, 48px);
       left: 50%;
       transform: translateX(-50%);
       z-index: 2;
-      width: clamp(160px, 22vw, 320px);
+      width: clamp(140px, 19vw, 280px);
       filter: drop-shadow(0 2px 18px rgba(0,0,0,0.35));
     }
 
@@ -66,7 +66,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
-      font-family: 'SangBleu Sunrise', 'IM Fell English', serif;
+      font-family: 'Cardo', serif;
       font-weight: 400;
       font-size: clamp(0.75rem, 1.1vw, 0.95rem);
       letter-spacing: 0.28em;
@@ -99,7 +99,7 @@
   <div class="overlay"></div>
 
   <!-- Logo: top center -->
-  <img src="assets/logos/FullLogo_Vanilla.svg" alt="Nonna" class="landing-logo">
+  <img src="assets/logos/Nonna_Mercado_Butter.svg" alt="Nonna" class="landing-logo">
 
   <!-- bem-vinda: dead center -->
   <a href="bem-vindos/" class="landing-link">bem-vindos</a>

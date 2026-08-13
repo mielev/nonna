@@ -17,7 +17,7 @@
       width: 100%;
       background: #e8ddcd;
       color: #2f1916;
-      font-family: 'SangBleu Sunrise', 'IM Fell English', serif;
+      font-family: 'Cardo', serif;
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
       text-transform: lowercase;
@@ -39,11 +39,11 @@
 
     /* left: bem-vinda */
     .back-link {
-      font-family: 'SangBleu Sunrise', 'IM Fell English', serif;
+      font-family: 'Cardo', serif;
       font-size: clamp(0.7rem, 1.1vw, 0.88rem);
       letter-spacing: 0.22em;
       text-transform: lowercase;
-      color: #2f1916;
+      color: #2a1f21;
       text-decoration: none;
       border-bottom: 1px solid rgba(47, 25, 22, 0.35);
       padding-bottom: 2px;
@@ -73,11 +73,11 @@
 
     /* right: em breve */
     .em-breve {
-      font-family: 'SangBleu Sunrise', 'IM Fell English', serif;
+      font-family: 'Cardo', serif;
       font-size: clamp(0.7rem, 1.1vw, 0.88rem);
       letter-spacing: 0.22em;
       text-transform: lowercase;
-      color: #2f1916;
+      color: #2a1f21;
       opacity: 0.55;
       transition: color 0.6s ease, opacity 0.6s ease;
       justify-self: end;
@@ -127,7 +127,7 @@
       font-size: clamp(1.1rem, 1.8vw, 1.45rem);
       line-height: 1.78;
       letter-spacing: 0.04em;
-      color: #2f1916;
+      color: #2a1f21;
       text-transform: lowercase;
       transition: opacity 0.6s ease;
     }
@@ -248,31 +248,33 @@
 
     /* ── Closing section ── */
     .closing {
-      background: #69241a;
+      position: relative;
+      background: #3F2021;
       color: #e8ddcd;
       padding: clamp(4rem, 10vh, 9rem) clamp(1.5rem, 6vw, 5rem);
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 2rem;
       min-height: clamp(240px, 42vh, 500px);
     }
 
     .closing-text {
-      flex: 1;
+      max-width: 640px;
       text-align: center;
       font-size: clamp(1rem, 1.9vw, 1.45rem);
       line-height: 1.8;
       letter-spacing: 0.04em;
-      color: #e8ddcd;
+      color: #f7f1e2;
       text-transform: lowercase;
     }
 
-    /* Tree — bottom left, aligned to flex row */
+    /* Tree — small reference mark, bottom-left corner, independent of text layout */
     .closing-tree {
-      flex-shrink: 0;
-      width: clamp(70px, 10vw, 140px);
-      align-self: flex-end;
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      width: clamp(36px, 3.8vw, 54px);
       opacity: 0.92;
     }
 
@@ -305,12 +307,8 @@
       .closing {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 3.5rem 1.5rem;
-      }
-
-      .closing-tree {
-        align-self: flex-start;
-        width: clamp(60px, 18vw, 100px);
       }
     }
   </style>
@@ -333,7 +331,7 @@
 
     <!-- Left: logo + manifest -->
     <div class="hero-inner">
-      <img src="../assets/logos/Logo2_Charcoal.svg" alt="Nonna" class="hero-logo">
+      <img src="../assets/logos/Nonna_CenterAlign_Coffee.svg" alt="Nonna" class="hero-logo">
       <div class="manifest-top">
         <p>onde menos se torna mais</p>
         <p>e cada mordida te lembra</p>
@@ -386,11 +384,8 @@
 
   <!-- Closing -->
   <footer class="closing">
-    <img src="../assets/logos/NonnaTree_Vanilla.svg" alt="" class="closing-tree">
-    <p class="closing-text">
-      estamos apenas voltando ao que realmente importa.<br><strong>frescor e simplicidade.</strong>
-    </p>
-    <div style="flex-shrink:0; width: clamp(70px, 10vw, 140px);"></div>
+    <img src="../assets/logos/Nonna_logomark_Butter.svg" alt="" class="closing-tree">
+    <p class="closing-text">estamos apenas voltando ao que realmente importa.<br><strong>frescor e simplicidade.</strong></p>
   </footer>
 
   <script>

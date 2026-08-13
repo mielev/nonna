@@ -1,26 +1,11 @@
 /*
   Nonna — Shared stylesheet
-  SangBleu Sunrise loaded via Google Fonts fallback stack;
-  replace with self-hosted @font-face when the license is in place.
-*/
-
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
-
-/*
-  SangBleu Sunrise is a commercial typeface (Swiss Typefaces).
-  The @font-face block below expects the font files to be placed at:
-    assets/fonts/SangBleuSunrise-Regular.woff2
-    assets/fonts/SangBleuSunrise-Regular.woff
-  If those files are present they will be used; otherwise the stack
-  falls back to IM Fell English (a close free-licensed serif) and
-  then to the browser's generic serif.
+  Cardo, self-hosted from assets/fonts/Cardo-Regular.ttf.
 */
 
 @font-face {
-  font-family: 'SangBleu Sunrise';
-  src:
-    url('assets/fonts/SangBleuSunrise-Regular.woff2') format('woff2'),
-    url('assets/fonts/SangBleuSunrise-Regular.woff')  format('woff');
+  font-family: 'Cardo';
+  src: url('assets/fonts/Cardo-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
